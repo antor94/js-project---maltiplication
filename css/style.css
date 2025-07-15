@@ -1,0 +1,179 @@
+
+
+
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f3;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 300px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main_div {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  color: ghostwhite;
+}
+
+
+.user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+      margin: 0 auto;
+    margin-top: -143px;
+}
+
+
+
+
+/* Card Styles */
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  width: 500px;
+  height: auto;
+  padding: 4px;
+  border-radius: 1rem;
+  background: var(--background);
+  position: relative;
+  overflow: visible;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+  filter: blur(25px);
+  background: var(--background);
+  transition: opacity 0.5s;
+}
+
+.card-info {
+  background: #322b2d;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.namota {
+  width: 400px;
+  padding: 30px;
+  background: #282a3a;
+  border-radius: 30px;
+  position: relative;
+  top: -480px;
+  /* margin: 20px auto; */
+  margin: 0 auto;
+  /* margin-top: -500px; */
+  border: 2px solid grey;
+  color: white;
+}
+
+.button {
+    margin-top: 23px;
+    width: 48%;
+    position: relative;
+    left: 87px;
+    top: 0;
+    height: 42px;
+}
+
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 10px;
+  white-space: pre-line;
+}
+
+
+.input{
+
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.input::placeholder{
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.user-label{
+    position: absolute;
+    top: 7px;
+    left: 155px;
+}
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.error {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 320px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background: #FCE8DB;
+  border-radius: 8px;
+  border: 1px solid #EF665B;
+  box-shadow: 0px 0px 5px -3px #111;
+  display: none;
+}
+
+.error__icon {
+  width: 20px;
+  height: 20px;
+  transform: translateY(-2px);
+  margin-right: 8px;
+}
+
+.error__icon path {
+  fill: #EF665B;
+}
+
+.error__title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #71192F;
+}
+
+.error__close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.error__close path {
+  fill: #71192F;
+}
